@@ -23,8 +23,16 @@ int main()
 	};
 	// Create GLFW window
 	glfwMakeContextCurrent(window);
-	// Close GLFW window
-	// glfwDestroyWindow(window);
+
+	// Load OpenGL libraries by glad
+	gladLoadGL();
+
+	/************* OpenGL libraries matter *************/
+	glViewport(0, 0, 800, 800);
+	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT); // Execute the display
+	glfwSwapBuffers(window); // Only front buffer to be displayed
+
 	// Handling GLFW window close behavior
 	while (!glfwWindowShouldClose(window))
 	{
@@ -32,6 +40,8 @@ int main()
 	}
 
 	/********** End of handling GLFW window **********/
+	// Close GLFW window
+	// glfwDestroyWindow(window);
 
 	// GLFW terminate
 	glfwTerminate();
