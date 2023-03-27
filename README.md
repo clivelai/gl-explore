@@ -4,6 +4,7 @@ For academic course purpose.
 # reference
 OpenGL Course - Create 3D and 2D Graphics With C++
 Video link: https://www.youtube.com/watch?v=45MIykWJ-C4
+Extra resources from the author: https://github.com/VictorGordan/opengl-tutorials
 
 # Libraries required
 GLFW: https://www.glfw.org/ (version 3.3.8)
